@@ -5,6 +5,6 @@ def wallis (count):
     pi=2*pi
     return pi   
 
-iteration = int(input ("enter value of iteration"))
+iteration = input ("enter value of iteration")
 estimated_py=wallis(iteration)   
 print(f"{estimated_py}")
