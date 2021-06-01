@@ -7,9 +7,7 @@ def wallis (count):
         pi=pi*(4*(i**2))/(4*(i**2)-1)
     pi=2*pi
     return pi   
-
-iteration = input ("enter value of iteration")
-wallis(iteration)   
+ 
 
 
 class TestWallis(unittest.TestCase):
