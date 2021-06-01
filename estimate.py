@@ -8,6 +8,22 @@ def wallis (count):
     pi=2*pi
     return pi   
  
+import random
+
+def monte_carlo(n):
+    c = 0
+    
+    for i in range(n):
+        x,y = random.random(),random.random()
+        s = ((x-0)**2 + (y-0)**2) 
+        if s <= 1:
+            c += 1
+
+    pi = 4*(c/n)
+    return(pi)
+    
+    
+print (f"{monte_carlo(999999)}")
 
 
 class TestWallis(unittest.TestCase):
